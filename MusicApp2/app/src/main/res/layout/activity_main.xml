@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grisBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titolApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/miniaturaMusica"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/titolApp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/folagoro" />
+
+    <TextSwitcher
+        android:id="@+id/textSwitcher"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/miniaturaMusica"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/nom_cancion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+    </TextSwitcher>
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSwitcher"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/seekbar_custom_style"/>
+
+    <TextView
+        android:id="@+id/btnPlay"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/seekBar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/play_button" />
+
+    <TextView
+        android:id="@+id/btnAfegir"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/add_icon"/>
+
+    <TextView
+        android:id="@+id/btnLlista"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/list_button"/>
+
+
+    <TextView
+        android:id="@+id/btnVolum"
+        android:background="@drawable/volum_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBarVolum"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="76dp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone"
+        android:max="100"/>
+</RelativeLayout>

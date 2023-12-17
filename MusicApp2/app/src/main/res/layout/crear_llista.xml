@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="250dp"
+    android:background="@color/listBackground"
+    tools:context=".CrearLlistaNova"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="X"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <EditText
+        android:id="@+id/nomPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/grisBackground"
+        android:hint="Nom"
+        android:gravity="center_vertical"/>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Confirmar"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
